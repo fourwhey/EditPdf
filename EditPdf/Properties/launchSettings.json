@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EditPdf": {
+      "commandName": "Project",
+      "commandLineArgs": "\"2018 JPA w_Seminole County.pdf\" rotatePages"
+    }
+  }
+}
