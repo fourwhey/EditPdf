@@ -14,10 +14,4 @@
     <PackageReference Include="itext.commons" Version="9.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="2018 JPA w_Seminole County.pdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
