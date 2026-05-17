@@ -1,6 +1,7 @@
-﻿using iText.Kernel.Pdf;
+﻿using EditPdf.Interface;
 
-using EditPdf.Interface;
+using iText.Kernel.Pdf;
+
 using static EditPdf.PdfUtils;
 
 namespace EditPdf
