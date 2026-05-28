@@ -17,6 +17,12 @@ namespace EditPdf
             int startPage = range.StartPage ?? 1;
             int endPage = range.EndPage ?? maxPage;
 
+            // Validate the range
+            if (!ValidatePageRange(startPage, endPage, maxPage))
+            {
+                return;
+            }
+
             // Delete from highest to lowest to avoid index shifts
             for (int i = endPage; i >= startPage; i--)
             {

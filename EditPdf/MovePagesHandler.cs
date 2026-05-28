@@ -30,6 +30,17 @@ namespace EditPdf
                 Console.Write($"Enter new position (1 to {maxPage}): ");
             }
 
+            // Validate page numbers
+            if (!ValidatePageNumber(pageToMove, maxPage, "Source page"))
+            {
+                return;
+            }
+
+            if (!ValidatePageNumber(newPosition, maxPage, "Destination position"))
+            {
+                return;
+            }
+
             doc.MovePage(pageToMove, newPosition);
             Console.WriteLine($"Page {pageToMove}: Moved to position {newPosition}");
 

@@ -9,9 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="itext" Version="9.1.0" />
-    <PackageReference Include="itext.bouncy-castle-adapter" Version="9.1.0" />
-    <PackageReference Include="itext.commons" Version="9.1.0" />
+    <PackageReference Include="itext" Version="9.6.0" />
+    <PackageReference Include="itext.bouncy-castle-adapter" Version="9.6.0" />
+    <PackageReference Include="itext.commons" Version="9.6.0" />
+    <PackageReference Include="System.Private.Uri" Version="4.3.2" />
   </ItemGroup>
 
 </Project>

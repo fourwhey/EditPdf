@@ -31,10 +31,16 @@ namespace EditPdf
                 Console.Write("Invalid rotation. Please enter 90, 180, 270, -90, -180, or -270: ");
             }
 
-            Console.WriteLine();
             int startPage = range.StartPage ?? 1;
             int endPage = range.EndPage ?? maxPage;
 
+            // Validate the range
+            if (!ValidatePageRange(startPage, endPage, maxPage))
+            {
+                return;
+            }
+
+            Console.WriteLine();
             for (int i = startPage; i <= endPage; i++)
             {
                 var page = doc.GetPage(i);
