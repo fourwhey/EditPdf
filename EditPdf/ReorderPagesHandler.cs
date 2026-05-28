@@ -10,7 +10,7 @@ namespace EditPdf
     {
         public void Execute(PdfDocument doc, string inputFile, string outputFile, int maxPage)
         {
-            Console.Clear();
+            PdfUtils.SafeClearConsole();
             Console.WriteLine("Reorder pages in the document.");
             Console.WriteLine($"Document has {maxPage} pages.");
             Console.WriteLine();

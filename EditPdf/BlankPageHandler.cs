@@ -11,7 +11,7 @@ namespace EditPdf
     {
         public void Execute(PdfDocument doc, string inputFile, string outputFile, int maxPage)
         {
-            Console.Clear();
+            PdfUtils.SafeClearConsole();
             Console.WriteLine("Insert blank pages into the document.");
             Console.WriteLine($"Current document has {maxPage} pages.");
             Console.WriteLine();

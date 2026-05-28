@@ -8,7 +8,7 @@ namespace EditPdf
     {
         public void Execute(PdfDocument doc, string inputFile, string outputFile, int maxPage)
         {
-            Console.Clear();
+            PdfUtils.SafeClearConsole();
             Console.WriteLine("Edit PDF metadata.");
             Console.WriteLine();
 

@@ -10,7 +10,7 @@ namespace EditPdf
     {
         public void Execute(PdfDocument doc, string inputFile, string outputFile, int maxPage)
         {
-            Console.Clear();
+            PdfUtils.SafeClearConsole();
             Console.WriteLine("Split document into multiple documents.");
             Console.WriteLine($"Source document: {inputFile} ({maxPage} pages)");
             Console.WriteLine();

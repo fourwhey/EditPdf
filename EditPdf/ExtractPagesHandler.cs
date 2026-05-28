@@ -10,7 +10,7 @@ namespace EditPdf
     {
         public void Execute(PdfDocument doc, string inputFile, string outputFile, int maxPage)
         {
-            Console.Clear();
+            PdfUtils.SafeClearConsole();
             Console.WriteLine("Extract specific pages to a new document.");
             Console.WriteLine($"Source document has {maxPage} pages.");
             Console.WriteLine();

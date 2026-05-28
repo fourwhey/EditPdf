@@ -10,7 +10,7 @@ namespace EditPdf
     {
         public void Execute(PdfDocument doc, string inputFile, string outputFile, int maxPage)
         {
-            Console.Clear();
+            PdfUtils.SafeClearConsole();
             Console.WriteLine("Merge multiple documents into one document.");
             Console.WriteLine($"Base document: {inputFile} ({maxPage} pages)");
             Console.WriteLine();

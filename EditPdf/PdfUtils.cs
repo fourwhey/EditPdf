@@ -88,6 +88,25 @@ namespace EditPdf
             return fullPath1.Equals(fullPath2, StringComparison.InvariantCultureIgnoreCase);
         }
 
+        /// <summary>
+        /// Clears the console when an interactive console is available.
+        /// </summary>
+        public static void SafeClearConsole()
+        {
+            try
+            {
+                Console.Clear();
+            }
+            catch (IOException)
+            {
+                // No interactive console is attached (e.g., test host).
+            }
+            catch (InvalidOperationException)
+            {
+                // Console is redirected or unavailable.
+            }
+        }
+
         public static PageRange GetPageRange(int minPage, int maxPage)
         {
             PageRange range = new();
